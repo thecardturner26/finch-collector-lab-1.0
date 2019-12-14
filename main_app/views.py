@@ -4,7 +4,7 @@ from .models import Finch
 # Create your views here.
 
 def home(request):
-    return HttpResponse('<h1>Homepage for Finches</h1>')
+    return render(request, 'home.html')
 
 def about(request):
     return render(request, 'about.html')
