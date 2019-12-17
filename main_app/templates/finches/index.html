@@ -2,6 +2,7 @@
 {% block content %}
 
 <h1>Finch List</h1>
+<a href="{% url 'finches_create' %}" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">+</i></a>
 
 {% for finch in finches %}
   <div class="card">
@@ -19,5 +20,6 @@
     </a>
   </div>
 {% endfor %}
+
 
 {% endblock %}
